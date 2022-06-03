@@ -22,7 +22,7 @@ putchar(',');
 putchar(' ');
 }
 }
-h = ++h;
+h = h + 1;
 }
 putchar('\n');
 return (0);
