@@ -14,5 +14,5 @@ for (d = 'A'; d <= 'Z'; ++d)
 putchar(d);
 }
 
-
+return (0);
 }
