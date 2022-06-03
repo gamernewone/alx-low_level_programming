@@ -4,48 +4,39 @@
  *
  * Return: 0
  */
-
 int main(void)
 {
-int c, d, e, f;
-int g = 0;
-int h = 0;
-int k = 0;
-int i = 0;
+	int i, j;
+	int a, b, c, d;
 
-for (c = 0; c < 10; ++c)
-{
-for (d = 0 + g; d < 10; ++d)
-{
+	for (i = 0; i < 100; i++)
+	{
+		a = i / 10; /* doubles fnum */
+		b = i % 10; /* singles fnum */
 
-for (e = 0 + h; e < 10; ++e)
-{
+		for (j = 0; j < 100; j++)
+		{
+			c = j / 10; /* doubles snum */
+			d = j % 10; /* singles snum */
 
-for (f = 0 + i; f < 10; ++f)
-{
-putchar('0' + c % 10);
-putchar('0' + d % 10);
-putchar(' ');
-putchar('0' + e % 10);
-putchar('0' + f % 10);
+			if (a < c || (a == c && b < d))
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
 
-if (c != 9)
-{
-putchar(',');
-putchar(' ');
+				if (!(a == 9 && b == 8))
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+		}
+	}
+	putchar(10);
+
+	return (0);
 }
 
-}
-
-}
-
-}
-
-g = g++;
-k = k++;
-h = h++;
-i = i++;
-}
-putchar('\n');
-return (0);
-}

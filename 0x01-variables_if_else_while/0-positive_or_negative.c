@@ -1,31 +1,41 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-#include <stdio.h>
-/* betty style doc for function main goes there */
-/**
- * main - return a number following conditions
- *
  * Return: 0
  */
+
 int main(void)
 {
-int n;
+int c, d, e, f;
+int h = 0;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-/* your code goes there */
-if (n > 0)
+for (c = 0; c < 10; ++c)
 {
-printf("%d is positive\n", n);
-}
-else if (n == 0)
+for (d = 0 + h; d < 10; ++d)
 {
-printf("%d is zero\n", n);
-}
-else
+
+for (e = 0; e < 10; ++e)
 {
-printf("%d is negative\n", n);
+
+for (f = 1; f < 10; ++f)
+{
+putchar('0' + c % 10);
+putchar('0' + d % 10);
+putchar(' ');
+putchar('0' + e % 10);
+putchar('0' + f % 10);
+
+if (c != 9)
+{
+putchar(',');
+putchar(' ');
 }
+
+}
+
+}
+
+h = h + 1;
+}
+
+}
+putchar('\n');
 return (0);
 }
