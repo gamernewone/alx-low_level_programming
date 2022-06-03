@@ -29,11 +29,11 @@ putchar(' ');
 }
 }
 
-k = ++k;
+k = k + 1;
 }
-l = ++l;
+l = l + 1;
 k = l;
-h = ++h;
+h =  h + 1;
 
 }
 putchar('\n');
