@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - write the alphabet in upper and lower case
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
 char c, d;
