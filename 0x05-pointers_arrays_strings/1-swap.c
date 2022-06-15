@@ -1,15 +1,18 @@
 
-/*
- * void - none
+/**
+ * swap_int - swap 2 numbers
+ * @a: first number
+ * @b: Second number
  *
- * retuns - nothing
- *
+ * Return: nothing, switch occurs
  */
 
 void swap_int(int *a, int *b)
 {
+
 int c;
 *a = c;
 *b = *a;
 *a = c;
+
 }
