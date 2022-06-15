@@ -1,4 +1,3 @@
-#include "_putchar"
 /**
  * _puts - Print a char
  * @str: the string to write
