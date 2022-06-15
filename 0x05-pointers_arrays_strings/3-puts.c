@@ -16,5 +16,6 @@ for ( ; character != '\0'; character = *++str)
 _putchar(character);
 
 }
+_putchar('\n');
 
 }
