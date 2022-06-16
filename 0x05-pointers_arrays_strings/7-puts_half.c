@@ -33,12 +33,15 @@ half++;
 
 else
 {
+
+while (half < count){
 _putchar(str[half]);
 half++;
 if (half == (count - 1))
 {
 int n = (count - 1) / 2;
 _putchar(str[n]);
+}
 }
 }
 
