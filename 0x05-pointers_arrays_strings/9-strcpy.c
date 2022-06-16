@@ -11,17 +11,13 @@
 
 char *_strcpy(char *dest, char *src)
 {
-int count;
-int count2;
 
-for (count = 0 ; src[count] != '\0' ; count++)
+int count = -1;
+do {
+count++;
+dest[count] = src[count];
+} while (src[count] != '\0');
 
-count += 1;
-
-for (count2 = 0; count2 < count; count2++)
-{
-dest[count2] = src[count2];
-}
 
 return (dest);
 
