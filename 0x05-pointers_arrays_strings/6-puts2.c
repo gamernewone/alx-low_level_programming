@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_rev - prints input string in reverse
- * @s: input string
+ * puts2 - prints every other string
+ * @str: input string
  *
  * Return: Void
  */
@@ -17,7 +17,7 @@ count++;
 }
 while (count--)
 {
-if (count % 2 != 0)
+if (count % 2 == 0)
 {
 _putchar(*str);
 }

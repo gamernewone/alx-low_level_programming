@@ -21,10 +21,10 @@ end++;
 count++;
 }
 
-for (count2 = 0; count2 < (count / 2); count2++)
+for (count2 = 0 ; count2 < (count / 2) ; count2++)
 {
 ch = s[i];
-s[i] = s[count - i - 1] ;
+s[i] = s[count - i - 1];
 s[count - i - 1] = ch;
 
 i++;
