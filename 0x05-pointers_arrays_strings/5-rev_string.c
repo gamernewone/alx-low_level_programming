@@ -8,11 +8,11 @@
 
 void rev_string(char *s)
 {
-int count, count2;
-char *start, *end, ch;
+int count, count2, i;
+char *end, ch;
 
+i = 0;
 count = 0;
-start = s;
 end = s;
 
 while (*end != '\0')
@@ -23,10 +23,10 @@ count++;
 
 for (count2 = 0; count2 < (count / 2); count2++)
 {
-ch = *end;
-*end = *start;
-*start = ch;
-start++;
-end--;
+ch = s[i];
+s[i] = s[count - i - 1] ;
+s[count - i - 1] = ch;
+
+i++;
 }
 }
