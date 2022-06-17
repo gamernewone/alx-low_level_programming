@@ -10,24 +10,22 @@
 char *_strncat(char *dest, char *src, int n)
 {
 
-int count2 = 0;
+int count = 0;
 int i;
 
 
-for ( ; dest[count2] != '\0'; )
+for ( ; dest[count] != '\0'; )
 {
-count2++;
+count++;
 }
 
-for (i = 0 ; i < n ; i++)
+for (i = 0 ; i < n && src[i] != '\0'; i++)
 {
-dest[i + count2] = src[i];
+dest[i + count] = src[i];
 }
 
-if (!(n > 0))
-{
-dest[n + count2] = '\0';
-}
+dest[count + i] = '\0';
+
 return (dest);
 
 }
