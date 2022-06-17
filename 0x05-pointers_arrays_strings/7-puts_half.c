@@ -18,32 +18,25 @@ while (str[count] != '\0')
 count++;
 }
 
-half = count / 2;
-
-
 if (count % 2 == 0)
 {
 
-while (half < count)
-{
-_putchar(str[half]);
-half++;
-}
+half = count / 2;
+
 }
 
 else
 {
 
+half = ((count - 1) / 2) + 1;
+}
+
 while (half < count)
 {
 _putchar(str[half]);
-if (half == (count - 1))
-{
-int n = (count - 1) / 2;
-_putchar(str[n]);
-}
 half++;
 }
-}
+
 _putchar('\n');
+
 }
