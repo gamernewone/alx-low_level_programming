@@ -1,5 +1,12 @@
 #include "main.h"
-#include <stdio.h>
+
+/**
+ * _strcat - concatenate 2 strings
+ * @dest: the destination sting
+ * @src: the source string
+ *
+ * Return: the dest string
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -10,21 +17,21 @@ int i;
 
 for ( ; src[count] != '\0'; )
 {
-    count++;
+count++;
 }
 
 for ( ; dest[count2] != '\0'; )
 {
-    count2++;
+count2++;
 }
 
 for (i = 0; i < count; i++)
 {
-    dest[i + count2] = src[i];
+dest[i + count2] = src[i];
 }
 
 dest[count + count2] = '\0';
 
-return dest;
+return (dest);
 
 }
